@@ -1,0 +1,27 @@
+2026-11-22 20:52:01 | INFO     | === INICIO DEL SISTEMA INTEGRAL SOFTWARE FJ (MODO EN MEMORIA) ===
+2026-11-22 20:52:01 | INFO     | EXITO - Cliente registrado: Cliente [CLI-01] - TechServe Solutions S.A.S. | Email: contacto@techserve.com | Tel: 3104567890
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Finalizó intento de registro para cliente ID='CLI-01'.
+2026-11-22 20:52:01 | INFO     | EXITO - Cliente registrado: Cliente [CLI-02] - Innovación Andina Ltda. | Email: gerencia@innovandina.co | Tel: 3209876543
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Finalizó intento de registro para cliente ID='CLI-02'.
+2026-11-22 20:52:01 | ERROR    | Fallo al registrar cliente 'CLI-03': [ERR-101] Correo electrónico inválido: 'correo_sin_arroba'.
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Finalizó intento de registro para cliente ID='CLI-03'.
+2026-11-22 20:52:01 | ERROR    | Fallo al registrar cliente 'CLI-01': [ERR-101] Ya existe un cliente registrado con el ID 'CLI-01'.
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Finalizó intento de registro para cliente ID='CLI-01'.
+2026-11-22 20:52:01 | INFO     | EXITO - Servicio catalogado: Servicio [SRV-01] Sala Ejecutiva Orion ($80,000.00/h) - Disponible
+2026-11-22 20:52:01 | INFO     | EXITO - Servicio catalogado: Servicio [SRV-02] Workstation GPU Xeon ($45,000.00/h) - Disponible
+2026-11-22 20:52:01 | INFO     | EXITO - Servicio catalogado: Servicio [SRV-03] Auditoría Hardening Linux ($120,000.00/h) - Disponible
+2026-11-22 20:52:01 | ERROR    | SIMULACION 6 - Creación de servicio bloqueada correctamente: [ERR-101] La tarifa base debe ser mayor a cero. Valor recibido: -50000
+2026-11-22 20:52:01 | INFO     | EXITO - Reserva registrada: Reserva [RES-101] | Estado: CONFIRMADA | Cliente: TechServe Solutions S.A.S. | Servicio: Sala 'Sala Ejecutiva Orion' (Capacidad: 12 personas, con equipo de videoconferencia) | Duración: 4h | Total: $374,850.00
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Transacción de reserva 'RES-101' concluida sin interrupciones.
+2026-11-22 20:52:01 | ERROR    | Fallo en reserva 'RES-102': [ERR-301] Imposible construir la reserva 'RES-102' para cliente 'CLI-02' y servicio 'SRV-01'. | Causa raíz: [ERR-201] El servicio 'Sala Ejecutiva Orion' no se encuentra disponible actualmente.
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Transacción de reserva 'RES-102' concluida sin interrupciones.
+2026-11-22 20:52:01 | ERROR    | Fallo en reserva 'RES-103': [ERR-301] Imposible construir la reserva 'RES-103' para cliente 'CLI-999' y servicio 'SRV-02'. | Causa raíz: [ERR-101] No se encontró ningún cliente con ID 'CLI-999'.
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Transacción de reserva 'RES-103' concluida sin interrupciones.
+2026-11-22 20:52:01 | INFO     | EXITO - Reserva registrada: Reserva [RES-104] | Estado: CONFIRMADA | Cliente: Innovación Andina Ltda. | Servicio: Asesoría en Ciberseguridad (Consultor Senior) - Auditoría Hardening Linux | Duración: 6h | Total: $1,245,930.00
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Transacción de reserva 'RES-104' concluida sin interrupciones.
+2026-11-22 20:52:01 | INFO     | EXITO - Reserva 'RES-104' actualizada mediante acción 'PROCESAR'.
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Revisión de estado finalizada para reserva 'RES-104'.
+2026-11-22 20:52:01 | ERROR    | Fallo al ejecutar 'CANCELAR' en reserva 'RES-104': [ERR-302] No es posible cancelar una reserva que ya fue procesada/facturada.
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Revisión de estado finalizada para reserva 'RES-104'.
+2026-11-22 20:52:01 | ERROR    | Fallo en reserva 'RES-105': [ERR-301] Imposible construir la reserva 'RES-105' para cliente 'CLI-01' y servicio 'SRV-02'. | Causa raíz: [ERR-401] El descuento ($9,999,999.00) no puede superar el subtotal ($297,000.00).
+2026-11-22 20:52:01 | INFO     | AUDITORIA - Transacción de reserva 'RES-105' concluida sin interrupciones.
